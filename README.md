@@ -62,7 +62,7 @@ You can use the trained model to calculate other metrics or to look at middle-le
 
 ## Citation
 
-If you use this project in your research, please cite it.
+If you use this project in your research, please cite:
 
 ```
 @inproceedings{zhang2018interpretable,
@@ -73,6 +73,14 @@ If you use this project in your research, please cite it.
  year={2018}
 }
 ```
-
+```
+@article{zhang2020interpretable,
+  title={Interpretable CNNs for Object Classification.},
+  author={Zhang, Quanshi and Wang, Xin and Wu, Ying Nian and Zhou, Huilin and Zhu, Song-Chun},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2020},
+  publisher={IEEE}
+}
+```
 
 
