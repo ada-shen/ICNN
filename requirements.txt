@@ -1,0 +1,9 @@
+# pip install -r requirements.txt
+
+pytorch==1.2.0
+torchvision==0.4.0a0
+tensorboard
+scipy
+opencv-python
+matplotlib
+
