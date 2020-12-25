@@ -28,7 +28,7 @@ and the generated imdb file will be relatively large.
 
 ## Requirement
 
-The environment should have all packages in [requirements.txt](./requirements.txt)
+The environment should contain all packages in [requirements.txt](./requirements.txt)
 ```bash
 $ pip install -r requirements.txt
 ```
@@ -39,15 +39,15 @@ but there is no such problem in pytorch 1.2.0. We will continue to study this pr
 ## Usage
 Here, we take **resnet-18 + voc2010_crop bird classification** as an example.
 
-To get the training results, we can run:
+To get the training result, you can run:
 ```bash
 $ python demo.py --model resnet_18 --dataset voc2010_crop --label_name bird
 ```
-After running the instructions above, you will get a new folder whose path is
+After running the instruction above, you will get a new folder whose path is
 `/resnet_18/voc2010_crop/bird` in the `/task/classification` folder.
 
-the new folder `bird` will contain a subfolder named `0` (correspond to your task_id) and three mat files (mean.mat, train.mat and val.mat).
-the `0` folder stores the model of every 10 epoches and log which contains 
+The new folder `bird` will contain a subfolder named `0` (correspond to your task_id) and three mat files (mean.mat, train.mat and val.mat).
+The `0` folder stores the model of every 10 epoches and log which contains 
 **train/val loss** and **train/val accuracy**  during network training.
 
 You can use the trained model to calculate other metrics or to look at middle-level features.
