@@ -9,6 +9,7 @@ from tools.get_cubimdb import get_cubimdb
 from tools.get_voc2010imdb import get_voc2010imdb
 from tools.get_helenimdb import get_helenimdb
 from tools.get_celebaimdb import get_celebaimdb
+from tools.get_cubsampleimdb import get_cubsampleimdb
 from tools.lib import *
 
 
@@ -85,6 +86,11 @@ def get_imdb(root_path,imdb_path,dataset_path,dataset,imagesize,label_name):
             save_imdb(imdb_mean_path, imdb_mean, 'mean')
         elif dataset == "voc2010_crop":
             imdb_train, imdb_val, imdb_mean = get_voc2010imdb(root_path, dataset, dataset_path, label_name, imagesize)
+            save_imdb(imdb_train_path, imdb_train,'train')
+            save_imdb(imdb_val_path, imdb_val,'val')
+            save_imdb(imdb_mean_path, imdb_mean, 'mean')
+        elif dataset == "cubsample":
+            imdb_train, imdb_val, imdb_mean = get_cubsampleimdb(root_path, dataset, dataset_path, 'cubsample', imagesize)
             save_imdb(imdb_train_path, imdb_train,'train')
             save_imdb(imdb_val_path, imdb_val,'val')
             save_imdb(imdb_mean_path, imdb_mean, 'mean')

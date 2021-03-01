@@ -15,7 +15,7 @@ def classification(root_path,args):
     make_dir(task_model_path)
     task_model_dataset_path = os.path.join(task_model_path,args.dataset)
     make_dir(task_model_dataset_path)
-    if args.dataset!='helen' and args.dataset!='celeba':
+    if args.dataset!='helen' and args.dataset!='celeba' and args.dataset!='cubsample':
         task_model_dataset_labelname_path = os.path.join(task_model_dataset_path,args.label_name)
         make_dir(task_model_dataset_labelname_path)
     else:

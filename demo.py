@@ -27,7 +27,7 @@ parser.add_argument('--gpu_id',type=int,default=0,help='select the id of the gpu
 #info:task
 parser.add_argument('--task_name',type=str,default='classification',help='select classification or classification_multi')
 parser.add_argument('--task_id',type=int,default=0,help='0,1,2..')
-parser.add_argument('--dataset',type=str,default='voc2010_crop',help='select voc2010_crop, helen, cub200,'
+parser.add_argument('--dataset',type=str,default='voc2010_crop',help='select voc2010_crop, helen, cub200,cubsample'
                                                                      'celeba, vocpart, ilsvrcanimalpart')
 parser.add_argument('--imagesize',type=int,default=224,help='')
 parser.add_argument('--label_name',type=str,default='bird',help='if voc2010_crop, set bird, cat, cow, dog, horse or sheep;'
